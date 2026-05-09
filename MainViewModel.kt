@@ -295,7 +295,7 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
         _state.update { it.copy(isAiLoading = true, aiExplanation = null) }
         viewModelScope.launch {
             try {
-                val groqKey = "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"
+                val groqKey = "**key**"
                 val url = "https://api.groq.com/openai/v1/chat/completions"
 
                 val gson = com.google.gson.Gson()
